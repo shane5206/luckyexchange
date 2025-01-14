@@ -14,7 +14,12 @@ export function SocialProof() {
           />
         </a>
         <a href="https://www.gugobet.com/" target="_blank" className="group">
-          <img src="/images/Partner-Vendors-Logo-02.png" width={200} height={200} />
+          <Image
+            alt="Partner Vendors Logo"
+            src="/images/Partner-Vendors-Logo-02.png"
+            width={200}
+            height={200}
+          />
         </a>
         <a href="https://www.vegas999.live/" className="block">
           <Image
@@ -41,7 +46,7 @@ export function SocialProof() {
           />
         </a>
         <a href="https://gcrics.com/" className="block">
-          <img
+          <Image
             alt="Partner Vendors Logo"
             src="/images/Partner-Vendors-Logo-06.png"
             width={200}
