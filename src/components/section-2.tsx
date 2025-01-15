@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Section2() {
   return (
     <div className="container py-10 space-y-10">
@@ -17,7 +19,12 @@ export function Section2() {
       <div id="counter" data-aos="fade-up" className="grid grid-cols-2 gap-4 mt-8 xl:grid-cols-3">
         <div className="flex flex-col items-center p-4">
           <div className="mb-3">
-            <img alt="Online Customer Service" src="/images/customer-care.png" width={100} />
+            <Image 
+              alt="Online Customer Service" 
+              src="/images/customer-care.png" 
+              width={100} 
+              height={100}
+            />
           </div>
           <p className="text-sm text-muted-foreground text-center mb-2">Online Customer Service</p>
           <div className="text-2xl font-bold text-primary">
@@ -26,7 +33,12 @@ export function Section2() {
         </div>
         <div className="flex flex-col items-center p-4">
           <div className="mb-3">
-            <img alt="Live Sporting Events Year Round" src="/images/football-tv.png" width={100} />
+            <Image 
+              alt="Live Sporting Events Year Round" 
+              src="/images/football-tv.png" 
+              width={100} 
+              height={100}
+            />
           </div>
           <p className="text-sm text-muted-foreground text-center mb-2">Live Sports Events</p>
           <div className="text-2xl font-bold text-primary">
@@ -35,7 +47,12 @@ export function Section2() {
         </div>
         <div className="flex flex-col items-center p-4">
           <div className="mb-3">
-            <img alt="Sports Categories" src="/images/sports.png" width={100} />
+            <Image 
+              alt="Sports Categories" 
+              src="/images/sports.png" 
+              width={100} 
+              height={100}
+            />
           </div>
           <p className="text-sm text-muted-foreground text-center mb-2">In-play Gaming Types</p>
           <div className="text-2xl font-bold text-primary">
@@ -44,7 +61,12 @@ export function Section2() {
         </div>
         <div className="flex flex-col items-center p-4">
           <div className="mb-3">
-            <img alt="Professional Trading Team" src="/images/price-growth.png" width={100} />
+            <Image 
+              alt="Professional Trading Team" 
+              src="/images/price-growth.png" 
+              width={100} 
+              height={100}
+            />
           </div>
           <p className="text-sm text-muted-foreground text-center mb-2">Fancy markets</p>
           <div className="text-2xl font-bold text-primary">
@@ -53,10 +75,11 @@ export function Section2() {
         </div>
         <div className="flex flex-col items-center p-4">
           <div className="mb-3">
-            <img
-              alt="Simultaneous Live Sporting Events"
-              src="/images/football-field-(2).png"
-              width={100}
+            <Image 
+              alt="Simultaneous Live Sporting Events" 
+              src="/images/football-field-(2).png" 
+              width={100} 
+              height={100}
             />
           </div>
           <p className="text-sm text-muted-foreground text-center mb-2">
@@ -68,10 +91,11 @@ export function Section2() {
         </div>
         <div className="flex flex-col items-center p-4">
           <div className="mb-3">
-            <img
-              alt="Other Live Sporting Events Every Month"
-              src="/images/calendar-check.png"
-              width={100}
+            <Image 
+              alt="Other Live Sporting Events Every Month" 
+              src="/images/calendar-check.png" 
+              width={100} 
+              height={100}
             />
           </div>
           <p className="text-sm text-muted-foreground text-center mb-2">Virtual Events per year</p>

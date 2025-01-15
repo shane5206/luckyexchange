@@ -44,7 +44,7 @@ export function Hero() {
               </div>
             </CarouselItem>
           </CarouselContent>
-          <div className="absolute left-0 right-0 flex justify-center gap-2">
+          <div className="absolute inset-x-0 flex justify-center gap-2">
             <CarouselPrevious className="relative translate-y-0 left-0 mr-2" />
             <CarouselNext className="relative translate-y-0 right-0" />
           </div>
@@ -88,7 +88,7 @@ export function Hero() {
               </div>
             </CarouselItem>
           </CarouselContent>
-          <div className="absolute left-0 right-0 flex justify-center gap-2">
+          <div className="absolute inset-x-0 flex justify-center gap-2">
             <CarouselPrevious className="relative translate-y-0 left-0 mr-2" />
             <CarouselNext className="relative translate-y-0 right-0" />
           </div>
