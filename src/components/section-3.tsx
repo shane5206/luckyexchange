@@ -21,7 +21,7 @@ export function Section3() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="bg-primary/10 p-3 rounded-full">
-                <Mail className="w-5 h-5 text-primary" />
+                <Mail className="size-5 text-primary" />
               </div>
               <div>
                 <p className="font-medium">Email</p>
