@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from "react";
 import {
   Carousel,
   CarouselPrevious,
@@ -7,6 +8,19 @@ import {
 import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card";
 
 export function Testimonials() {
+  const nextButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  // 自動輪播功能
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (nextButtonRef.current) {
+        nextButtonRef.current.click(); // 自動觸發下一步按鈕
+      }
+    }, 3000); // 每 3 秒切換一次
+
+    return () => clearInterval(interval); // 清除計時器，避免記憶體洩漏
+  }, []);
+
   return (
     <section className="container flex flex-col items-center gap-6 sm:gap-7 py-10">
       <div className="flex flex-col gap-3">
@@ -16,8 +30,8 @@ export function Testimonials() {
         </h2>
       </div>
       <p className="text-lg text-muted-foreground text-balance max-w-lg text-center">
-        Hear from our satisfied users who trust &lt;br&gt;Lucky Exchange for their sports betting
-        needs.
+        Hear from our satisfied users who trust <br />
+        Lucky Exchange for their sports betting needs.
       </p>
       <Carousel opts={{ loop: true, align: "start" }} className="mt-6 w-full px-4 xl:px-0">
         <CarouselPrevious variant="ghost" className="-left-6 size-7 xl:-left-12 xl:size-8" />
@@ -53,7 +67,11 @@ export function Testimonials() {
             username="Mammen"
           />
         </CarouselContent>
-        <CarouselNext className="-right-6 size-7 xl:-right-12 xl:size-8" />
+        {/* 將下一步按鈕與 Ref 連接 */}
+        <CarouselNext
+          className="-right-6 size-7 xl:-right-12 xl:size-8"
+          ref={nextButtonRef}
+        />
       </Carousel>
     </section>
   );
