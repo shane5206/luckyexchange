@@ -36,7 +36,7 @@ export function Hero() {
         <Carousel orientation="horizontal" className="hidden md:block">
           <CarouselContent>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[844px]">
+              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
                 <Image
                   alt="Carousel image 1"
                   src="/images/Official-Website-Banner-19201280--01.png"
@@ -45,7 +45,7 @@ export function Hero() {
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[844px]">
+              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
                 <Image
                   alt="Carousel image 3"
                   src="/images/Official-Website-Banner-19201280--03.png"
@@ -55,7 +55,7 @@ export function Hero() {
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[844px]">
+              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
                 <Image
                   alt="Carousel image 2"
                   src="/images/Official-Website-Banner-19201280--02.png"
