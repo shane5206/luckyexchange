@@ -33,7 +33,7 @@ export function Hero() {
     <section className="flex flex-col items-center gap-8 sm:gap-10 pb-10">
       <div className="w-full object-center justify-center container">
         {/* 桌面版輪播 */}
-        <Carousel orientation="horizontal" className="hidden md:block">
+        <Carousel orientation="horizontal" className="hidden md:block" opts={{ loop: true }}>
           <CarouselContent>
             <CarouselItem>
               <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
@@ -72,7 +72,7 @@ export function Hero() {
         </Carousel>
 
         {/* 行動版輪播 */}
-        <Carousel orientation="horizontal" className="md:hidden container">
+        <Carousel orientation="horizontal" className="md:hidden container" opts={{ loop: true }}>
           <CarouselContent>
             <CarouselItem>
               <div className="relative w-full">
