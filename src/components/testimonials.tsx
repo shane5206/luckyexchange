@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef } from "react";
 import {
   Carousel,
@@ -10,15 +12,14 @@ import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card"
 export function Testimonials() {
   const nextButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  // 自動輪播功能
   useEffect(() => {
     const interval = setInterval(() => {
       if (nextButtonRef.current) {
         nextButtonRef.current.click(); // 自動觸發下一步按鈕
       }
-    }, 3000); // 每 3 秒切換一次
+    }, 3000);
 
-    return () => clearInterval(interval); // 清除計時器，避免記憶體洩漏
+    return () => clearInterval(interval); // 清除計時器
   }, []);
 
   return (
@@ -67,11 +68,7 @@ export function Testimonials() {
             username="Mammen"
           />
         </CarouselContent>
-        {/* 將下一步按鈕與 Ref 連接 */}
-        <CarouselNext
-          className="-right-6 size-7 xl:-right-12 xl:size-8"
-          ref={nextButtonRef}
-        />
+        <CarouselNext className="-right-6 size-7 xl:-right-12 xl:size-8" ref={nextButtonRef} />
       </Carousel>
     </section>
   );
