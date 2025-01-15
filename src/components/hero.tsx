@@ -1,3 +1,6 @@
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
 import {
@@ -9,9 +12,27 @@ import {
 } from "@/components/ui/carousel";
 
 export function Hero() {
+  const desktopNextRef = useRef<HTMLButtonElement | null>(null);
+  const mobileNextRef = useRef<HTMLButtonElement | null>(null);
+
+  // 自動輪播功能
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (desktopNextRef.current) {
+        desktopNextRef.current.click(); // 自動觸發桌面版下一步按鈕
+      }
+      if (mobileNextRef.current) {
+        mobileNextRef.current.click(); // 自動觸發行動版下一步按鈕
+      }
+    }, 3000); // 每 3 秒切換一次
+
+    return () => clearInterval(interval); // 清除計時器，防止記憶體洩漏
+  }, []);
+
   return (
     <section className="flex flex-col items-center gap-8 sm:gap-10 pb-10">
       <div className="w-full object-center justify-center container">
+        {/* 桌面版輪播 */}
         <Carousel orientation="horizontal" className="hidden md:block">
           <CarouselContent>
             <CarouselItem>
@@ -46,9 +67,11 @@ export function Hero() {
           </CarouselContent>
           <div className="absolute inset-x-0 flex justify-center gap-2">
             <CarouselPrevious className="relative translate-y-0 left-0 mr-2" />
-            <CarouselNext className="relative translate-y-0 right-0" />
+            <CarouselNext ref={desktopNextRef} className="relative translate-y-0 right-0" />
           </div>
         </Carousel>
+
+        {/* 行動版輪播 */}
         <Carousel orientation="horizontal" className="md:hidden container">
           <CarouselContent>
             <CarouselItem>
@@ -90,7 +113,7 @@ export function Hero() {
           </CarouselContent>
           <div className="absolute inset-x-0 flex justify-center gap-2">
             <CarouselPrevious className="relative translate-y-0 left-0 mr-2" />
-            <CarouselNext className="relative translate-y-0 right-0" />
+            <CarouselNext ref={mobileNextRef} className="relative translate-y-0 right-0" />
           </div>
         </Carousel>
       </div>
