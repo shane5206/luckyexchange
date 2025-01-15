@@ -12,7 +12,7 @@ export function Section3() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold font-heading">
-            Step Into the Winning Zone – Connect with RichKing Exchange!{" "}
+            Step Into the Winning Zone – Connect with Lucky Exchange!{" "}
           </h2>
           <p className="text-muted-foreground">
             We’re committed to providing you the best experience. Let’s make sports trading
