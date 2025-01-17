@@ -19,7 +19,7 @@ export function Header() {
         <NavItem2 href="/Contact Us" label="Contact Us">
         </NavItem2>
       </nav>
-      <div className="items-center gap-2 md:flex flex-1 justify-end">
+      <div className="hidden sm:flex items-center gap-2 flex-1 justify-end">
         <Button size="lg" asChild variant="destructive">
           <Link href="#" className="cursor-pointer">
             Get Started
