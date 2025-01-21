@@ -27,7 +27,7 @@ export function Header() {
         </Button>
       </div>
       <MobileNavbar>
-        <div className="rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
+        <div className="hidden rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
             <NavItem2 href="/Home" label="Home" className="hidden" />
             <NavItem2 href="/About" label="About" className="hidden" />
