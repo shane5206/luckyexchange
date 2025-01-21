@@ -39,7 +39,7 @@ export function Testimonials() {
         <CarouselContent className="pb-4">
           <CarouselTestimonialCard
             name="John"
-            text="The most important thing that this website are on my favourite list"
+            text="I really love this it is truly amazing"
             image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/worldface-pakistani-guy-white-background_1f0a1733-5deb-4e05-b5a4-ca71d40f0447.jpg"
             username="johndoe"
           />

@@ -20,9 +20,10 @@ export function FeaturesSection2() {
         </div>
         <p className="text-lg text-muted-foreground text-balance max-w-lg text-left">
           Multiple betting markets, including Match Winner, Top Batsman, Total Runs, Overs, Wickets,
-          and more.<p>Flexible stake sizes catering to casual and seasoned bettors.</p>
+          and more.
         </p>
-        <p>Flexible stake sizes catering to casual and seasoned bettors.
+        <p className="text-lg text-muted-foreground text-balance max-w-lg text-left">
+          Flexible stake sizes catering to casual and seasoned bettors.
         </p>
         <ul className="mt-4 space-y-3">
           <li className="flex items-center gap-2" />

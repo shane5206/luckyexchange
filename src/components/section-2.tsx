@@ -9,7 +9,7 @@ export function Section2() {
         </h2>
       </div>
       <div id="reputation">
-        <p className="text-lg text-center text-muted-foreground justify-center">
+        <p className="text-lg max-w-2xl text-center text-muted-foreground">
           Drawing on deep industry knowledge, Lucky Exchange delivers bespoke solutions for sports
           betting operators across the spectrum. We are dedicated to providing highly efficient and
           cost-effective betting services, tailored to meet the distinct requirements of each
