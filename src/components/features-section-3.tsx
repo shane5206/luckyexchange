@@ -22,7 +22,7 @@ export function FeaturesSection2() {
           Multiple betting markets, including Match Winner, Top Batsman, Total Runs, Overs, Wickets,
           and more.
         </p>
-        <p className="text-lg text-muted-foreground text-balance max-w-lg text-left">
+        <p className="text-lg text-muted-foreground max-w-lg text-left">
           Flexible stake sizes catering to casual and seasoned bettors.
         </p>
         <ul className="mt-4 space-y-3">
