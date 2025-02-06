@@ -41,9 +41,6 @@ importers:
       next:
         specifier: 14.2.3
         version: 14.2.3(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
-      nodemailer:
-        specifier: ^6.9.16
-        version: 6.9.16
       react:
         specifier: ^18
         version: 18.0.0
@@ -1507,10 +1504,6 @@ packages:
         optional: true
       sass:
         optional: true
-
-  nodemailer@6.9.16:
-    resolution: {integrity: sha512-psAuZdTIRN08HKVd/E8ObdV6NO7NTBY3KsC30F7M4H1OnmLCUNaS56FpYxyb26zWLSyYF9Ozch9KYHhHegsiOQ==}
-    engines: {node: '>=6.0.0'}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -3596,8 +3589,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
-
-  nodemailer@6.9.16: {}
 
   normalize-path@3.0.0: {}
 
