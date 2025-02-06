@@ -44,9 +44,12 @@ export function Section3() {
       if (!response.ok) throw new Error('Failed to send');
       setSubmitStatus('success');
       form.reset();
-    } catch (error) {
+    } catch (error: any) {
       console.error('Submission error:', error);
       setSubmitStatus('error');
+      if (error.response) {
+        console.error('Server response:', error.response.data);
+      }
     } finally {
       setIsSubmitting(false);
     }

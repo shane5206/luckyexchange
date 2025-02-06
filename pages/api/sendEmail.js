@@ -13,7 +13,12 @@ export default async function handler(req, res) {
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS
-    }
+    },
+    tls: {
+      rejectUnauthorized: false
+    },
+    logger: true,
+    debug: true
   });
 
   // 郵件內容
@@ -37,6 +42,9 @@ export default async function handler(req, res) {
     res.status(200).json({ success: true });
   } catch (error) {
     console.error('Mail send error:', error);
-    res.status(500).json({ error: 'Failed to send email' });
+    res.status(500).json({
+      error: 'Failed to send email',
+      details: error.response ? error.response : error.message
+    });
   }
 }
