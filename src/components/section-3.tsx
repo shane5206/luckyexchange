@@ -40,16 +40,44 @@ export function Section3() {
       formData.append('entry.1291015772', data.email);
       formData.append('entry.1847230535', data.message);
 
-      const response = await fetch('https://docs.google.com/forms/d/e/KUfyd8vETGpsABdd6/formResponse', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: formData.toString(),
-        mode: 'no-cors'
-      });
+      // Google Forms需要处理重定向
+      const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfER4RQ2NVSzEf3j4nojBl9y7046iiNNweVWsFDmv_-XhUc6w/formResponse';
+      
+      // 构造iframe提交方式绕过CORS限制
+      const iframe = document.createElement('iframe');
+      iframe.name = 'google-form-iframe';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
 
-      if (!response.ok && response.type !== 'opaque') throw new Error('Failed to send');
+      const form = document.createElement('form');
+      form.target = 'google-form-iframe';
+      form.action = formUrl;
+      form.method = 'POST';
+      form.style.display = 'none';
+
+      // 动态创建表单字段
+      const addField = (name: string, value: string) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        form.appendChild(input);
+      };
+
+      addField('entry.94032766', data.name);
+      addField('entry.1291015772', data.email);
+      addField('entry.1847230535', data.message);
+
+      document.body.appendChild(form);
+      form.submit();
+
+      // 延迟清理DOM元素
+      setTimeout(() => {
+        document.body.removeChild(form);
+        document.body.removeChild(iframe);
+      }, 3000);
+
+      // 假设提交成功(实际需通过Google Forms确认)
       setSubmitStatus('success');
       form.reset();
     } catch (error: any) {
