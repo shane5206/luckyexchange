@@ -22,12 +22,14 @@ export default async function handler(req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
+      user: process.env.EMAIL_USER || 'default@example.com',
+      pass: process.env.EMAIL_PASS || 'default-password'
     },
     tls: {
       rejectUnauthorized: false
-    }
+    },
+    logger: true,
+    debug: true
   });
 
   // 郵件內容
