@@ -1,6 +1,15 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
+  // 设置CORS头
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -9,22 +18,26 @@ export default async function handler(req, res) {
 
   // 郵件傳輸設定
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS
     },
     tls: {
       rejectUnauthorized: false
-    },
-    logger: true,
-    debug: true
+    }
   });
 
   // 郵件內容
   const mailOptions = {
     from: `"Website Contact" <${process.env.EMAIL_USER}>`,
-    to: process.env.EMAIL_USER, // 寄給自己
+    to: process.env.EMAIL_USER,
+    envelope: {
+      from: `contact@${process.env.EMAIL_USER.split('@')[1] || 'yourdomain.com'}`,
+      to: process.env.EMAIL_USER
+    },
     replyTo: email,
     subject: `New message from ${name}`,
     text: message,
