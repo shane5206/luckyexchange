@@ -1,0 +1,233 @@
+[debug] [2025-02-07T03:46:21.261Z] ----------------------------------------------------------------------
+[debug] [2025-02-07T03:46:21.263Z] Command:       /Users/shane/.nvm/versions/node/v20.17.0/bin/node /Users/shane/.nvm/versions/node/v20.17.0/bin/firebase deploy --only functions --debug
+[debug] [2025-02-07T03:46:21.263Z] CLI Version:   13.30.0
+[debug] [2025-02-07T03:46:21.263Z] Platform:      darwin
+[debug] [2025-02-07T03:46:21.263Z] Node Version:  v20.17.0
+[debug] [2025-02-07T03:46:21.263Z] Time:          Fri Feb 07 2025 11:46:21 GMT+0800 (台北標準時間)
+[debug] [2025-02-07T03:46:21.263Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-07T03:46:21.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-07T03:46:21.350Z] > authorizing via signed-in user (shanehung@brevitydata.net)
+[debug] [2025-02-07T03:46:21.350Z] [iam] checking project youtube-and-blog for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-02-07T03:46:21.351Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:21.351Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:21.352Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions [none]
+[debug] [2025-02-07T03:46:21.352Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:21.352Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-02-07T03:46:22.375Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions 200
+[debug] [2025-02-07T03:46:22.376Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-02-07T03:46:22.377Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:22.377Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:22.377Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/youtube-and-blog/serviceAccounts/youtube-and-blog@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-02-07T03:46:22.377Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/youtube-and-blog/serviceAccounts/youtube-and-blog@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-02-07T03:46:22.814Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/youtube-and-blog/serviceAccounts/youtube-and-blog@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-02-07T03:46:22.815Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/youtube-and-blog/serviceAccounts/youtube-and-blog@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'youtube-and-blog'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2025-02-07T03:46:24.521Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.521Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.521Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog [none]
+[debug] [2025-02-07T03:46:24.828Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog 200
+[debug] [2025-02-07T03:46:24.829Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog {"projectNumber":"379254969879","projectId":"youtube-and-blog","lifecycleState":"ACTIVE","name":"youtube and blog","labels":{"firebase":"enabled"},"createTime":"2023-03-27T05:02:16.858607Z","parent":{"type":"organization","id":"265011656854"}}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-02-07T03:46:24.831Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.831Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.831Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.831Z] Checked if tokens are valid: true, expires at: 1738902311295
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-02-07T03:46:24.832Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.832Z] Checked if tokens are valid: true, expires at: 1738902311295
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-02-07T03:46:24.833Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.833Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:24.833Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-02-07T03:46:24.833Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:24.835Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-02-07T03:46:24.835Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:24.837Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudbuild.googleapis.com [none]
+[debug] [2025-02-07T03:46:24.837Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudbuild.googleapis.com x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:24.839Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/artifactregistry.googleapis.com [none]
+[debug] [2025-02-07T03:46:24.840Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/artifactregistry.googleapis.com x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:25.154Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudbuild.googleapis.com 200
+[debug] [2025-02-07T03:46:25.155Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-02-07T03:46:25.457Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/runtimeconfig.googleapis.com 200
+[debug] [2025-02-07T03:46:25.457Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-02-07T03:46:25.982Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudfunctions.googleapis.com 200
+[debug] [2025-02-07T03:46:25.983Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-02-07T03:46:26.021Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/artifactregistry.googleapis.com 200
+[debug] [2025-02-07T03:46:26.021Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-02-07T03:46:26.022Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.022Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.022Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/youtube-and-blog/adminSdkConfig [none]
+[debug] [2025-02-07T03:46:26.298Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/youtube-and-blog/adminSdkConfig 200
+[debug] [2025-02-07T03:46:26.299Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/youtube-and-blog/adminSdkConfig {"projectId":"youtube-and-blog","storageBucket":"youtube-and-blog.firebasestorage.app"}
+[debug] [2025-02-07T03:46:26.299Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.300Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.300Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs [none]
+[debug] [2025-02-07T03:46:26.544Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs 200
+[debug] [2025-02-07T03:46:26.544Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs {"configs":[{"name":"projects/youtube-and-blog/configs/email"}]}
+[debug] [2025-02-07T03:46:26.545Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.545Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.545Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables [none]
+[debug] [2025-02-07T03:46:26.767Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables 200
+[debug] [2025-02-07T03:46:26.767Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables {"variables":[{"name":"projects/youtube-and-blog/configs/email/variables/pass","updateTime":"2025-02-07T03:46:04.853368301Z"},{"name":"projects/youtube-and-blog/configs/email/variables/user","updateTime":"2025-02-07T03:46:05.373292081Z"}]}
+[debug] [2025-02-07T03:46:26.768Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.768Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.768Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.768Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:26.768Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables/pass [none]
+[debug] [2025-02-07T03:46:26.769Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables/user [none]
+[debug] [2025-02-07T03:46:27.002Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables/user 200
+[debug] [2025-02-07T03:46:27.002Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables/user {"name":"projects/youtube-and-blog/configs/email/variables/user","updateTime":"2025-02-07T03:46:05.373292081Z","text":"s27119597@gmail.com"}
+[debug] [2025-02-07T03:46:27.673Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables/pass 200
+[debug] [2025-02-07T03:46:27.673Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/youtube-and-blog/configs/email/variables/pass {"name":"projects/youtube-and-blog/configs/email/variables/pass","updateTime":"2025-02-07T03:46:04.853368301Z","text":"soxi uuby zpse hlzv"}
+[debug] [2025-02-07T03:46:27.677Z] Validating nodejs source
+[debug] [2025-02-07T03:46:28.071Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-02-07T03:46:28.071Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-02-07T03:46:28.072Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-02-07T03:46:28.076Z] Found firebase-functions binary at '/Users/shane/Downloads/app/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8412
+
+[debug] [2025-02-07T03:46:28.272Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[debug] [2025-02-07T03:46:33.289Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:33.289Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:33.289Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/firebaseextensions.googleapis.com [none]
+[debug] [2025-02-07T03:46:33.289Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/firebaseextensions.googleapis.com x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:33.762Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/firebaseextensions.googleapis.com 200
+[debug] [2025-02-07T03:46:33.762Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/youtube-and-blog/services/firebaseextensions.googleapis.com [omitted]
+[info] ✔  extensions: required API firebaseextensions.googleapis.com is enabled 
+[debug] [2025-02-07T03:46:33.763Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-07T03:46:33.763Z] > authorizing via signed-in user (shanehung@brevitydata.net)
+[debug] [2025-02-07T03:46:33.763Z] [iam] checking project youtube-and-blog for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[debug] [2025-02-07T03:46:33.764Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:33.764Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:33.764Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions [none]
+[debug] [2025-02-07T03:46:33.764Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions x-goog-quota-user=projects/youtube-and-blog
+[debug] [2025-02-07T03:46:33.764Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-02-07T03:46:34.772Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions 200
+[debug] [2025-02-07T03:46:34.773Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/youtube-and-blog:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-02-07T03:46:34.774Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:34.774Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:34.775Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/youtube-and-blog/instances pageSize=100&pageToken=
+[debug] [2025-02-07T03:46:35.960Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/youtube-and-blog/instances 200
+[debug] [2025-02-07T03:46:35.961Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/youtube-and-blog/instances {}
+[debug] [2025-02-07T03:46:35.964Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:35.964Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:35.964Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/youtube-and-blog/locations/-/functions [none]
+[debug] [2025-02-07T03:46:36.835Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/youtube-and-blog/locations/-/functions 200
+[debug] [2025-02-07T03:46:36.835Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/youtube-and-blog/locations/-/functions {"functions":[{"name":"projects/youtube-and-blog/locations/asia-south1/functions/streamEntry-wp","httpsTrigger":{"url":"https://asia-south1-youtube-and-blog.cloudfunctions.net/streamEntry-wp","securityLevel":"SECURE_OPTIONAL"},"status":"ACTIVE","entryPoint":"streamEntry","timeout":"300s","availableMemoryMb":256,"serviceAccountEmail":"youtube-and-blog@appspot.gserviceaccount.com","updateTime":"2024-01-16T08:08:54.721Z","versionId":"17","labels":{"deployment-tool":"console-cloud"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-1041799656658.asia-south1.cloudfunctions.appspot.com/2465605c-a746-422c-a456-c2ce8d6b484d.zip","environmentVariables":{"WORDPRESS_API_TOKEN":"eW91dHViZWJvdDpFbkEjTzYzbno4YTlwRTBiaGhVV3NtbzY="},"runtime":"go120","maxInstances":3000,"ingressSettings":"ALLOW_ALL","buildId":"6d8db321-8a65-45bb-bdb3-5c8960a07b71","secretEnvironmentVariables":[{"key":"WORDPRESS_API_TOKEN","projectId":"379254969879","secret":"wordpress-token","version":"1"}],"buildName":"projects/379254969879/locations/asia-south1/builds/6d8db321-8a65-45bb-bdb3-5c8960a07b71","dockerRegistry":"CONTAINER_REGISTRY","automaticUpdatePolicy":{}},{"name":"projects/youtube-and-blog/locations/us-central1/functions/streamEntry","httpsTrigger":{"url":"https://us-central1-youtube-and-blog.cloudfunctions.net/streamEntry","securityLevel":"SECURE_OPTIONAL"},"status":"ACTIVE","entryPoint":"streamEntry","timeout":"300s","availableMemoryMb":256,"serviceAccountEmail":"youtube-and-blog@appspot.gserviceaccount.com","updateTime":"2024-10-26T22:14:47.519Z","versionId":"187","labels":{"deployment-tool":"cli-gcloud"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-890038882109.us-central1.cloudfunctions.appspot.com/b57206ef-72a5-4809-88a6-9bf59bed238d.zip","runtime":"go120","ingressSettings":"ALLOW_ALL","buildId":"5899649c-b128-4341-9c50-dd4e384a7659","buildName":"projects/379254969879/locations/us-central1/builds/5899649c-b128-4341-9c50-dd4e384a7659","dockerRegistry":"CONTAINER_REGISTRY","automaticUpdatePolicy":{}}]}
+[debug] [2025-02-07T03:46:36.835Z] GCF 1st gen function has unsupported runtime: {
+  "name": "projects/youtube-and-blog/locations/asia-south1/functions/streamEntry-wp",
+  "httpsTrigger": {
+    "url": "https://asia-south1-youtube-and-blog.cloudfunctions.net/streamEntry-wp",
+    "securityLevel": "SECURE_OPTIONAL"
+  },
+  "status": "ACTIVE",
+  "entryPoint": "streamEntry",
+  "timeout": "300s",
+  "availableMemoryMb": 256,
+  "serviceAccountEmail": "youtube-and-blog@appspot.gserviceaccount.com",
+  "updateTime": "2024-01-16T08:08:54.721Z",
+  "versionId": "17",
+  "labels": {
+    "deployment-tool": "console-cloud"
+  },
+  "sourceUploadUrl": "https://storage.googleapis.com/uploads-1041799656658.asia-south1.cloudfunctions.appspot.com/2465605c-a746-422c-a456-c2ce8d6b484d.zip",
+  "environmentVariables": {
+    "WORDPRESS_API_TOKEN": "eW91dHViZWJvdDpFbkEjTzYzbno4YTlwRTBiaGhVV3NtbzY="
+  },
+  "runtime": "go120",
+  "maxInstances": 3000,
+  "ingressSettings": "ALLOW_ALL",
+  "buildId": "6d8db321-8a65-45bb-bdb3-5c8960a07b71",
+  "secretEnvironmentVariables": [
+    {
+      "key": "WORDPRESS_API_TOKEN",
+      "projectId": "379254969879",
+      "secret": "wordpress-token",
+      "version": "1"
+    }
+  ],
+  "buildName": "projects/379254969879/locations/asia-south1/builds/6d8db321-8a65-45bb-bdb3-5c8960a07b71",
+  "dockerRegistry": "CONTAINER_REGISTRY",
+  "automaticUpdatePolicy": {}
+}
+[debug] [2025-02-07T03:46:36.836Z] GCF 1st gen function has unsupported runtime: {
+  "name": "projects/youtube-and-blog/locations/us-central1/functions/streamEntry",
+  "httpsTrigger": {
+    "url": "https://us-central1-youtube-and-blog.cloudfunctions.net/streamEntry",
+    "securityLevel": "SECURE_OPTIONAL"
+  },
+  "status": "ACTIVE",
+  "entryPoint": "streamEntry",
+  "timeout": "300s",
+  "availableMemoryMb": 256,
+  "serviceAccountEmail": "youtube-and-blog@appspot.gserviceaccount.com",
+  "updateTime": "2024-10-26T22:14:47.519Z",
+  "versionId": "187",
+  "labels": {
+    "deployment-tool": "cli-gcloud"
+  },
+  "sourceUploadUrl": "https://storage.googleapis.com/uploads-890038882109.us-central1.cloudfunctions.appspot.com/b57206ef-72a5-4809-88a6-9bf59bed238d.zip",
+  "runtime": "go120",
+  "ingressSettings": "ALLOW_ALL",
+  "buildId": "5899649c-b128-4341-9c50-dd4e384a7659",
+  "buildName": "projects/379254969879/locations/us-central1/builds/5899649c-b128-4341-9c50-dd4e384a7659",
+  "dockerRegistry": "CONTAINER_REGISTRY",
+  "automaticUpdatePolicy": {}
+}
+[debug] [2025-02-07T03:46:36.836Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:36.836Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:36.836Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/youtube-and-blog/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-02-07T03:46:38.192Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/youtube-and-blog/locations/-/functions 200
+[debug] [2025-02-07T03:46:38.193Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/youtube-and-blog/locations/-/functions {}
+[debug] [2025-02-07T03:46:38.198Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:38.198Z] Checked if tokens are valid: true, expires at: 1738902311295
+[debug] [2025-02-07T03:46:38.198Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/youtube-and-blog/billingInfo [none]
+[debug] [2025-02-07T03:46:39.304Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/youtube-and-blog/billingInfo 200
+[debug] [2025-02-07T03:46:39.304Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/youtube-and-blog/billingInfo {"name":"projects/youtube-and-blog/billingInfo","projectId":"youtube-and-blog","billingAccountName":"billingAccounts/018DE6-6DB13A-358525","billingEnabled":true}
+[debug] [2025-02-07T03:46:39.309Z] Total Function Deployment time: 0
+[debug] [2025-02-07T03:46:39.309Z] 0 Functions Deployed
+[debug] [2025-02-07T03:46:39.309Z] 0 Functions Errored
+[debug] [2025-02-07T03:46:39.309Z] 0 Function Deployments Aborted
+[debug] [2025-02-07T03:46:39.309Z] Average Function Deployment time: NaN
+[info] i  functions: cleaning up build files... 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/youtube-and-blog/overview

@@ -14,7 +14,21 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  // 嚴格檢查環境變數
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    console.error('環境變數未正確設定');
+    return res.status(500).json({
+      error: '伺服器配置錯誤',
+      details: '請聯繫網站管理員'
+    });
+  }
+
   const { name, email, message } = req.body;
+
+  console.log('當前郵件配置:', {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS ? '*******' : '未設定'
+  });
 
   // 郵件傳輸設定
   const transporter = nodemailer.createTransport({
