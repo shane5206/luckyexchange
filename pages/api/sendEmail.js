@@ -35,8 +35,8 @@ export default async function handler(req, res) {
     from: `"Website Contact" <${process.env.EMAIL_USER}>`,
     to: process.env.EMAIL_USER,
     envelope: {
-      from: `contact@${process.env.EMAIL_USER.split('@')[1] || 'yourdomain.com'}`,
-      to: process.env.EMAIL_USER
+      from: process.env.EMAIL_USER ? `contact@${process.env.EMAIL_USER.split('@')[1]}` : 'contact@yourdomain.com',
+      to: process.env.EMAIL_USER || 'your-email@domain.com'
     },
     replyTo: email,
     subject: `New message from ${name}`,
