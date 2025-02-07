@@ -35,13 +35,21 @@ export function Section3() {
     };
 
     try {
-      const response = await fetch('/api/sendEmail', {
+      const formData = new URLSearchParams();
+      formData.append('entry.94032766', data.name);
+      formData.append('entry.1291015772', data.email);
+      formData.append('entry.1847230535', data.message);
+
+      const response = await fetch('https://docs.google.com/forms/d/e/KUfyd8vETGpsABdd6/formResponse', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: formData.toString(),
+        mode: 'no-cors'
       });
 
-      if (!response.ok) throw new Error('Failed to send');
+      if (!response.ok && response.type !== 'opaque') throw new Error('Failed to send');
       setSubmitStatus('success');
       form.reset();
     } catch (error: any) {
