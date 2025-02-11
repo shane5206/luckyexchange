@@ -11,7 +11,7 @@ export function Header() {
         <Image alt="Image" src="/images/Lucky-Exchange1-(1).png" width={50} height={50} />
         <span className="font-heading text-xl font-bold">Lucky Exchange</span>
       </Link>
-      <nav className="hidden sm:flex items-center justify-center gap-5 columns-5">
+      <nav className="hidden sm:flex items-center justify-center gap-5 columns-5 hidden">
         <NavItem2 href="/Home" label="Home" />
         <NavItem2 href="/About" label="About" />
         <NavItem2 href="/service" label="service" />
