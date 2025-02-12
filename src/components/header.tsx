@@ -12,15 +12,15 @@ export function Header() {
         <Image alt="Image" src="/images/Lucky-Exchange1-(1).png" width={50} height={50} />
         <span className="font-heading text-xl font-bold">Lucky Exchange</span>
       </Link>
-      <nav className="sm:flex items-center justify-center gap-5 columns-5 hidden">
-        <NavItem2 href="/Home" label="Home" />
-        <NavItem2 href="/About" label="About" />
-        <NavItem2 href="/service" label="service" />
-        <NavItem2 href="/news" label="news" />
+      <nav className="hidden sm:flex items-center justify-center gap-5">
+        <NavItem2 href="/home" label="Home" />
+        <NavItem2 href="/about" label="About" />
+        <NavItem2 href="/service" label="Service" />
+        <NavItem2 href="/news" label="News" />
         <NavItem2 href="/Contact Us" label="Contact Us">
         </NavItem2>
       </nav>
-      <div className="hidden sm:flex items-center gap-2 flex-1 justify-end">
+      <div className="hidden flex-1 items-center justify-end gap-2 sm:flex">
         <Button size="lg" asChild variant="destructive">
           <Link
             href="#contact-sales"
