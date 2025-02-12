@@ -12,7 +12,7 @@ export function Header() {
         <Image alt="Image" src="/images/Lucky-Exchange1-(1).png" width={50} height={50} />
         <span className="font-heading text-xl font-bold">Lucky Exchange</span>
       </Link>
-      <nav className="hidden sm:flex items-center justify-center gap-5">
+      <nav className="hidden items-center justify-center gap-5">
         <NavItem2 href="/home" label="Home" />
         <NavItem2 href="/about" label="About" />
         <NavItem2 href="/service" label="Service" />
@@ -20,7 +20,7 @@ export function Header() {
         <NavItem2 href="/Contact Us" label="Contact Us">
         </NavItem2>
       </nav>
-      <div className="hidden flex-1 items-center justify-end gap-2 sm:flex">
+      <div className="flex-1 items-center justify-end gap-2 sm:flex">
         <Button size="lg" asChild variant="destructive">
           <Link
             href="#contact-sales"
