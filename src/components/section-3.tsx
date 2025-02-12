@@ -92,7 +92,7 @@ export function Section3() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div id="contact-sales" className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold font-heading">
