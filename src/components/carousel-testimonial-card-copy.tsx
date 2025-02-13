@@ -25,7 +25,7 @@ export function CarouselTestimonialCardCopy({
           <CardContent className="flex flex-col items-start gap-5 p-7">
             <div className="flex items-center gap-4">
               {/* 圖片容器 */}
-              <div className="relative size-10 overflow-hidden rounded-full">
+              <div className="relative size-10 rounded-full">
               </div>
               {/* 名稱與使用者名稱 */}
               <div>
