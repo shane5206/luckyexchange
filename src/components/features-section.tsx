@@ -31,31 +31,31 @@ export function Features() {
           <CarouselTestimonialCardCopy
             name="Unmatched Liquidity"
             text="Enjoy seamless betting with high liquidity across cricket and other popular sports."
-            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/sections-assets/testimonial-1.avif"
+            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/cash-flow_f4d998c9-54a6-421f-8551-7fd3c80e3e05.png"
             username="johndoe"
           />
           <CarouselTestimonialCardCopy
             name="Localized User Experience"
             text="Platforms designed to match regional preferences, ensuring a familiar and intuitive interface."
-            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/sections-assets/testimonial-1.avif"
+            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/user-friendly_5c2bb8a0-25c0-4df1-ba51-3fb2f92cfdfc.png"
             username="johndoe"
           />
           <CarouselTestimonialCardCopy
             name="Swift Transactions"
             text="Enjoy quick bet settlements and secure payment options meeting the demands for fast-paced betting action."
-            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/sections-assets/testimonial-1.avif"
+            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/credit_c50911f5-5493-4192-9d39-fae7f95a3ab2.png"
             username="johndoe"
           />
           <CarouselTestimonialCardCopy
             name="Comprehensive Market Coverage"
             text="From IPL to Test Matches, access pre-match and in-play betting markets globally."
-            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/sections-assets/testimonial-1.avif"
+            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/market-positioning_08947f5b-ae65-48fd-8b08-d17c0d084abf.png"
             username="johndoe"
           />
           <CarouselTestimonialCardCopy
             name="Peer-to-Peer Betting Community"
             text="Engage with other users directly through interactive peer-to-peer betting features."
-            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/sections-assets/testimonial-1.avif"
+            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/lending_e3779c5d-6492-4e3b-9908-6023938aac42.png"
             username="johndoe"
           />
         </CarouselContent>

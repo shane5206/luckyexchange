@@ -13,7 +13,6 @@ interface CarouselTestimonialCardCopyProps {
 
 export function CarouselTestimonialCardCopy({
   name,
-  username,
   image,
   text,
   className,
@@ -26,6 +25,12 @@ export function CarouselTestimonialCardCopy({
             <div className="flex items-center gap-4">
               {/* 圖片容器 */}
               <div className="relative size-10 rounded-full">
+                <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  className="rounded-full object-cover"
+                />
               </div>
               {/* 名稱與使用者名稱 */}
               <div>
