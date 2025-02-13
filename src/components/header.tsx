@@ -49,7 +49,7 @@ export function Header() {
             <NavItem2 href="/docs" label="Docs" />
             <NavItem2 href="/blog" label="Blog" />
             <NavItem2 href="/pricing" label="Pricing" />
-            <Button size="lg" asChild={false} className="mt-2 w-full">
+            <Button size="lg" asChild={false} className="mt-2 w-full sm:size-auto">
               <Link href="#" className="cursor-pointer">
                Contact Sales
               </Link>
