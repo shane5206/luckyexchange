@@ -20,7 +20,7 @@ export function Header() {
         <NavItem2 href="/Contact Us" label="Contact Us">
         </NavItem2>
       </nav>
-      <div className="flex-1 items-center justify-end gap-2 sm:hidden">
+      <div className="flex-1 items-center justify-end gap-2">
         <Button size="lg" asChild variant="destructive">
           <Link
             href="#contact-sales"
@@ -49,7 +49,7 @@ export function Header() {
             <NavItem2 href="/docs" label="Docs" />
             <NavItem2 href="/blog" label="Blog" />
             <NavItem2 href="/pricing" label="Pricing" />
-            <Button size="lg" asChild={false} className="mt-2 w-full">
+            <Button size="lg" asChild={false} className="mt-2 w-full sm:hidden">
               <Link href="#" className="cursor-pointer">
                Contact Sales
               </Link>
