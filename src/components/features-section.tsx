@@ -25,7 +25,7 @@ export function Features() {
           <CarouselTestimonialCardCopy
             name="Low Stakes, High Potential"
             text="Accessible for both beginners and experienced bettors with flexible betting limits."
-            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/sections-assets/testimonial-1.avif"
+            image="https://wqnmyfkavrotpmupbtou.supabase.co/storage/v1/object/public/assets/profit_1de29297-66cc-4915-907a-8f4444b75351.png"
             username="johndoe"
           />
           <CarouselTestimonialCardCopy
