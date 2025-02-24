@@ -1,0 +1,23 @@
+{
+  "name": "Lucky Exchange",
+  "short_name": "Lucky Exchange",
+  "description": "Lucky Exchange offers the best real-time sports betting experience with industry-leading odds and fast settlements. Enjoy 99% market uptime, instant live match updates, and exclusive coverage of 3,250+ live matches across cricket, football, tennis, basketball, and kabaddi. With early market openings, competitive pricing, and seamless trading support, Lucky Exchange ensures a secure and dynamic betting environment. Bet smarter with precision models, rolling settlements, and the fastest market updates. Elevate your betting experience with Lucky Exchange – where every second counts!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 
