@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
+import { Hero1 } from "@/components/hero1";
+import { Hero } from "@/components/hero"; 
 import { Technologies } from "@/components/technologies";
 import { Section } from "@/components/section";
 import { Section2 } from "@/components/section-2";
@@ -16,6 +17,10 @@ export default function HomePage() {
   return (
     <>
       <Header />
+      <Hero1 
+        title="Lucky Exchange"
+        subtitle="Real-Time Odds, Fast Settlements & Seamless API Integration for Bookmakers and Operators"
+      />
       <Hero />
       <Technologies />
       <Section />

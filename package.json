@@ -18,6 +18,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.1.6",
+    "framer-motion": "^12.4.7",
     "lucide-react": "^0.381.0",
     "next": "14.2.3",
     "nodemailer": "^6.9.16",
@@ -40,6 +41,8 @@
     "typescript": "^5"
   },
   "prettier": {
-    "plugins": ["prettier-plugin-tailwindcss"]
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
