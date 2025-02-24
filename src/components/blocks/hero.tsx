@@ -6,7 +6,24 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-const Hero = React.forwardRef<HTMLElement, HeroProps>(
+interface Action {
+  label: string
+  href: string
+  variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"
+}
+
+interface HeroProps extends React.HTMLAttributes<HTMLElement> {
+  gradient?: boolean
+  blur?: boolean
+  title: string
+  subtitle?: string
+  actions?: Action[]
+  titleClassName?: string
+  subtitleClassName?: string
+  actionsClassName?: string
+}
+
+const Hero2 = React.forwardRef<HTMLElement, HeroProps>(
   (
     {
       className,
@@ -124,7 +141,7 @@ const Hero = React.forwardRef<HTMLElement, HeroProps>(
             )}
             {actions && actions.length > 0 && (
               <div className={cn("flex gap-4", actionsClassName)}>
-                {actions.map((action, index) => (
+                {actions.map((action: Action, index: number) => (
                   <Button
                     key={index}
                     variant={action.variant || "default"}
@@ -141,6 +158,6 @@ const Hero = React.forwardRef<HTMLElement, HeroProps>(
     )
   },
 )
-Hero.displayName = "Hero"
+Hero2.displayName = "Hero2"
 
-export { Hero }
+export { Hero2 }
