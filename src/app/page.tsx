@@ -9,6 +9,7 @@ import { FeaturesSection } from "@/components/features-section-2";
 import { FeaturesSection2 } from "@/components/features-section-3";
 import { SocialProof } from "@/components/social-proof";
 import { Section3 } from "@/components/section-3";
+import { Faq } from "@/components/faq";
 import { Footer } from "@/components/footer";
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <FeaturesSection2 />
       <SocialProof />
       <Section3 />
+      <Faq />
       <Footer />
     </>
   );
