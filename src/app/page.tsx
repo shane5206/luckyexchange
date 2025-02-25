@@ -18,8 +18,8 @@ export default function HomePage() {
     <>
       <Header />
       <Hero1 
-        title="Lucky Exchange-The Ultimate B2B Sports Trading Platform"
-        subtitle="Real-Time Odds, Fast Settlements & Seamless API Integration for Bookmakers and Operators"
+        title="Lucky Exchange-The Ultimate B2B Sports Trading solution"
+        subtitle="Real-Time Odds, Fast Settlements & Scalable B2B Solutions for Bookmakers and Operators"
       />
       <Hero />
       <Technologies />
