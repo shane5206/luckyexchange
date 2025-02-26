@@ -12,13 +12,9 @@ export function Header() {
         <Image alt="Image" src="/images/Lucky-Exchange1-(1).png" width={50} height={50} />
         <span className="font-heading text-xl font-bold">Lucky Exchange</span>
       </Link>
-      <nav className="hidden items-center justify-center gap-5">
-        <NavItem2 href="/home" label="Home" />
-        <NavItem2 href="/about" label="About" />
-        <NavItem2 href="/service" label="Service" />
-        <NavItem2 href="/news" label="News" />
-        <NavItem2 href="/Contact Us" label="Contact Us">
-        </NavItem2>
+      <nav className="flex items-center justify-center gap-5">
+        <NavItem2 href="/" label="Home" />
+        <NavItem2 href="/product" label="Product" />
       </nav>
       <div className="hidden md:flex flex-1 items-center justify-end gap-2">
         <Button size="lg" asChild variant="destructive">
@@ -39,16 +35,8 @@ export function Header() {
       <MobileNavbar>
         <div className="hidden rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
-            <NavItem2 href="/Home" label="Home" className="hidden" />
-            <NavItem2 href="/About" label="About" className="hidden" />
-            <NavItem2 href="/service" label="service" className="hidden" />
-            <NavItem2 href="/news" label="news" className="hidden" />
-            <NavItem2 href="/Contact Us" label="Contact Us" className="hidden">
-            </NavItem2>
-            <NavItem2 href="/about" label="About" />
-            <NavItem2 href="/docs" label="Docs" />
-            <NavItem2 href="/blog" label="Blog" />
-            <NavItem2 href="/pricing" label="Pricing" />
+            <NavItem2 href="/" label="Home" />
+            <NavItem2 href="/product" label="Product" />
             <Button size="lg" asChild={false} className="mt-2 w-full sm:hidden">
               <Link href="#" className="cursor-pointer">
                Contact Sales
