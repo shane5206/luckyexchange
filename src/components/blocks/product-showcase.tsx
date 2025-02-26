@@ -21,7 +21,7 @@ export function ProductShowcase() {
         </div>
         <div className="flex flex-col justify-center">
           <div className="space-y-6">
-            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm">
+            <div className="inline-block rounded-lg bg-white px-3 py-1 text-sm">
               Sports Trading Solutions
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -30,10 +30,6 @@ export function ProductShowcase() {
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We provide complete sports betting solutions, including real-time odds, fast settlements, and scalable B2B services. Whether you&apos;re a small betting company or a large operator, we can meet your needs.
             </p>
-          </div>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button size="lg">Learn More</Button>
-            <Button size="lg" variant="outline">Contact Sales</Button>
           </div>
         </div>
       </div>

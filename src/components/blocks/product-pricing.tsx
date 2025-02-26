@@ -9,7 +9,7 @@ export function ProductPricing() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm">
+            <div className="inline-block rounded-lg bg-white px-3 py-1 text-sm">
               Pricing Plans
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -52,9 +52,8 @@ export function ProductPricing() {
                 <span>Email support</span>
               </li>
             </ul>
-            <Button className="mt-8">Contact Sales</Button>
           </div>
-          <div className="flex flex-col rounded-lg border bg-blue-50 p-6 shadow-sm">
+          <div className="flex flex-col rounded-lg border bg-white p-6 shadow-sm">
             <div className="space-y-2">
               <h3 className="text-2xl font-bold">Professional</h3>
               <p className="text-gray-500">For medium-sized betting companies</p>
@@ -85,7 +84,6 @@ export function ProductPricing() {
                 <span>Priority email and phone support</span>
               </li>
             </ul>
-            <Button className="mt-8" variant="default">Contact Sales</Button>
           </div>
           <div className="flex flex-col rounded-lg border bg-white p-6 shadow-sm">
             <div className="space-y-2">
@@ -121,7 +119,6 @@ export function ProductPricing() {
                 <span>Custom development</span>
               </li>
             </ul>
-            <Button className="mt-8">Contact Sales</Button>
           </div>
         </div>
       </div>
