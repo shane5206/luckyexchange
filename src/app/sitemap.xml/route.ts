@@ -12,6 +12,12 @@ function generateSiteMap() {
         <priority>1.0</priority>
       </url>
       <url>
+        <loc>${baseUrl}/product</loc>
+        <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+      </url>
+      <url>
         <loc>${baseUrl}/about</loc>
         <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
         <changefreq>monthly</changefreq>
