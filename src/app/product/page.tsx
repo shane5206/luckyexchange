@@ -18,7 +18,6 @@ export default function ProductPage() {
       <ProductShowcase />
       <ProductFeatures />
       <Features />
-      <ProductPricing />
       <Faq />
       <Footer />
     </>
