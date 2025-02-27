@@ -18,6 +18,10 @@ const fontHeading = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Lucky Exchange",
   description: "Bet on Lucky Exchange – a leading sports betting platform with top market access, competitive odds, and seamless gameplay. Join now for the best betting experience!",
+  alternates: {
+    canonical: 'https://luckysports.cloud',
+  },
+  metadataBase: new URL('https://luckysports.cloud'),
 };
 
 export default function RootLayout({

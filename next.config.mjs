@@ -4,10 +4,24 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'wqnmyfkavrotpmupbtou.supabase.co',
-          port: '',
-          pathname: '/storage/v1/object/public/**',
-        }
+          hostname: 'images.unsplash.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'source.unsplash.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'plus.unsplash.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'images.pexels.com',
+        },
+        {
+          protocol: 'https',
+          hostname: 'img.youtube.com',
+        },
       ],
       formats: ['image/avif', 'image/webp'],
       minimumCacheTTL: 60,
@@ -33,9 +47,22 @@ const nextConfig = {
             {
               key: 'Strict-Transport-Security',
               value: 'max-age=63072000; includeSubDomains; preload'
-            }
+            },
+            {
+              key: 'Link',
+              value: '<https://luckysports.cloud>; rel="canonical"',
+            },
           ]
-        }
+        },
+        {
+          source: '/product',
+          headers: [
+            {
+              key: 'Link',
+              value: '<https://luckysports.cloud/product>; rel="canonical"',
+            },
+          ],
+        },
       ]
     }
   };
