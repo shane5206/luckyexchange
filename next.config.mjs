@@ -22,6 +22,11 @@ const nextConfig = {
           protocol: 'https',
           hostname: 'img.youtube.com',
         },
+        {
+          protocol: 'https',
+          hostname: 'wqnmyfkavrotpmupbtou.supabase.co',
+          pathname: '/storage/v1/object/public/**',
+        },
       ],
       formats: ['image/avif', 'image/webp'],
       minimumCacheTTL: 60,
