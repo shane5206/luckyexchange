@@ -12,7 +12,7 @@ export function Header() {
         <Image alt="Image" src="/images/Lucky-Exchange1-(1).png" width={50} height={50} />
         <span className="font-heading text-xl font-bold">Lucky Exchange</span>
       </Link>
-      <nav className="flex items-center justify-center gap-5">
+      <nav className="hidden md:flex items-center justify-center gap-5">
         <NavItem2 href="/" label="Home" />
         <NavItem2 href="/product" label="Product" />
         <NavItem2 href="/contact-us" label="Contact Us" />
@@ -34,14 +34,23 @@ export function Header() {
         </Button>
       </div>
       <MobileNavbar>
-        <div className="hidden rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
+        <div className="rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
             <NavItem2 href="/" label="Home" />
             <NavItem2 href="/product" label="Product" />
             <NavItem2 href="/contact-us" label="Contact Us" />
-            <Button size="lg" asChild={false} className="mt-2 w-full sm:hidden">
-              <Link href="#" className="cursor-pointer">
-               Contact Sales
+            <Button size="lg" asChild variant="destructive" className="mt-2 w-full">
+              <Link 
+                href="#contact-sales"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact-sales')?.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }}
+                className="cursor-pointer"
+              >
+                Contact Sales
               </Link>
             </Button>
           </nav>
