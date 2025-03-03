@@ -25,7 +25,7 @@ export function ProductShowcase() {
               Sports Trading Solutions
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Comprehensive Sports Betting Platform
+              Comprehensive Sports Betting solutions
             </h2>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We provide complete sports betting solutions, including real-time odds, fast settlements, and scalable B2B services. Whether you&apos;re a small betting company or a large operator, we can meet your needs.
