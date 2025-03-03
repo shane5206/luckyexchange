@@ -5,7 +5,22 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/admin/'],
+      disallow: [
+        '/api/', 
+        '/admin/',
+        '/home',
+        '/Home',
+        '/about',
+        '/About',
+        '/service',
+        '/news',
+        '/Contact Us',
+        '/docs',
+        '/blog',
+        '/pricing',
+        '/register',
+        '/contact'
+      ],
     },
     sitemap: 'https://luckysports.cloud/sitemap.xml',
     host: 'https://luckysports.cloud',

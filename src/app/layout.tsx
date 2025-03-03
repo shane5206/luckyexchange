@@ -16,12 +16,33 @@ const fontHeading = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Lucky Exchange",
-  description: "Bet on Lucky Exchange – a leading sports betting platform with top market access, competitive odds, and seamless gameplay. Join now for the best betting experience!",
+  title: {
+    default: "Lucky Exchange - B2B Sports Trading Solutions",
+    template: "%s | Lucky Exchange"
+  },
+  description: "Lucky Exchange offers leading sports betting platform with top market access, competitive odds, and seamless gameplay for bookmakers and operators.",
+  keywords: "sports betting, sports trading, B2B solutions, bookmakers, betting operators, real-time odds",
   alternates: {
     canonical: 'https://luckysports.cloud',
   },
   metadataBase: new URL('https://luckysports.cloud'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://luckysports.cloud',
+    title: 'Lucky Exchange - B2B Sports Trading Solutions',
+    description: 'Leading sports betting platform with top market access, competitive odds, and seamless gameplay for bookmakers and operators.',
+    siteName: 'Lucky Exchange',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lucky Exchange - B2B Sports Trading Solutions',
+    description: 'Leading sports betting platform with top market access, competitive odds, and seamless gameplay for bookmakers and operators.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({

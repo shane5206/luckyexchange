@@ -68,6 +68,15 @@ const nextConfig = {
             },
           ],
         },
+        {
+          source: '/contact-us',
+          headers: [
+            {
+              key: 'Link',
+              value: '<https://luckysports.cloud/contact-us>; rel="canonical"',
+            },
+          ],
+        },
       ]
     }
   };

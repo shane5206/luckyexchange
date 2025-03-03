@@ -21,25 +21,11 @@ function generateSiteMap() {
         <xhtml:link rel="canonical" href="${baseUrl}/product"/>
       </url>
       <url>
-        <loc>${baseUrl}/about</loc>
+        <loc>${baseUrl}/contact-us</loc>
         <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="canonical" href="${baseUrl}/about"/>
-      </url>
-      <url>
-        <loc>${baseUrl}/contact</loc>
-        <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="canonical" href="${baseUrl}/contact"/>
-      </url>
-      <url>
-        <loc>${baseUrl}/register</loc>
-        <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="canonical" href="${baseUrl}/register"/>
+        <xhtml:link rel="canonical" href="${baseUrl}/contact-us"/>
       </url>
     </urlset>`
 }
