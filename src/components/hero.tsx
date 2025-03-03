@@ -30,22 +30,23 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center gap-8 sm:gap-10 pb-10">
+    <section className="flex flex-col items-center gap-4 sm:gap-6 pb-5">
       <div className="w-full object-center justify-center container">
         {/* 桌面版輪播 */}
         <Carousel orientation="horizontal" className="hidden md:block" opts={{ loop: true }}>
           <CarouselContent>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
+              <div className="relative w-full h-[300px] md:h-[450px] lg:h-[550px]">
                 <Image
                   alt="Carousel image 1"
                   src="/images/Official-Website-Banner-19201280--01.png"
                   fill
+                  className="rounded-lg"
                 />
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
+              <div className="relative w-full h-[300px] md:h-[450px] lg:h-[550px]">
                 <Image
                   alt="Carousel image 3"
                   src="/images/Official-Website-Banner-19201280--03.png"
@@ -55,7 +56,7 @@ export function Hero() {
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
+              <div className="relative w-full h-[300px] md:h-[450px] lg:h-[550px]">
                 <Image
                   alt="Carousel image 2"
                   src="/images/Official-Website-Banner-19201280--02.png"
