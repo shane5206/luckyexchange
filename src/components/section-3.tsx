@@ -40,8 +40,8 @@ export function Section3() {
     setIsSubmitting(true);
     setSubmitStatus('');
 
-    const form = e.currentTarget as HTMLFormElement;
-    const formData = new FormData(form);
+    const originalForm = e.currentTarget as HTMLFormElement;
+    const formData = new FormData(originalForm);
     
     const data = {
       name: formData.get('name') as string,
@@ -55,47 +55,42 @@ export function Section3() {
       formData.append('entry.1291015772', data.email);
       formData.append('entry.1847230535', data.message);
 
-      // Google Forms需要处理重定向
       const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfER4RQ2NVSzEf3j4nojBl9y7046iiNNweVWsFDmv_-XhUc6w/formResponse';
       
-      // 构造iframe提交方式绕过CORS限制
       const iframe = document.createElement('iframe');
       iframe.name = 'google-form-iframe';
       iframe.style.display = 'none';
       document.body.appendChild(iframe);
 
-      const form = document.createElement('form');
-      form.target = 'google-form-iframe';
-      form.action = formUrl;
-      form.method = 'POST';
-      form.style.display = 'none';
+      const tempForm = document.createElement('form');
+      tempForm.target = 'google-form-iframe';
+      tempForm.action = formUrl;
+      tempForm.method = 'POST';
+      tempForm.style.display = 'none';
 
-      // 动态创建表单字段
       const addField = (name: string, value: string) => {
         const input = document.createElement('input');
         input.type = 'hidden';
         input.name = name;
         input.value = value;
-        form.appendChild(input);
+        tempForm.appendChild(input);
       };
 
       addField('entry.94032766', data.name);
       addField('entry.1291015772', data.email);
       addField('entry.1847230535', data.message);
 
-      document.body.appendChild(form);
-      form.submit();
+      document.body.appendChild(tempForm);
+      tempForm.submit();
 
-      // 延迟清理DOM元素
       setTimeout(() => {
-        document.body.removeChild(form);
+        document.body.removeChild(tempForm);
         document.body.removeChild(iframe);
       }, 3000);
 
-      // 假設提交成功(實際需通過Google Forms確認)
       setSubmitStatus('success');
       localStorage.setItem('lastFormSubmit', Date.now().toString());
-      form.reset();
+      originalForm.reset();
     } catch (error: any) {
       console.error('Submission error:', error);
       setSubmitStatus('error');
