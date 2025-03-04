@@ -18,10 +18,25 @@ const contactInfo = [
 
 export function Section3() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | ''>('');
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | 'cooldown' | ''>('');
+  const COOLDOWN_TIME = 5 * 60 * 1000; // 5分鐘冷卻時間
+
+  const checkSubmitCooldown = (): boolean => {
+    const lastSubmitTime = localStorage.getItem('lastFormSubmit');
+    if (!lastSubmitTime) return true;
+    
+    const timeDiff = Date.now() - parseInt(lastSubmitTime);
+    return timeDiff > COOLDOWN_TIME;
+  };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    if (!checkSubmitCooldown()) {
+      setSubmitStatus('cooldown');
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus('');
 
@@ -77,8 +92,9 @@ export function Section3() {
         document.body.removeChild(iframe);
       }, 3000);
 
-      // 假设提交成功(实际需通过Google Forms确认)
+      // 假設提交成功(實際需通過Google Forms確認)
       setSubmitStatus('success');
+      localStorage.setItem('lastFormSubmit', Date.now().toString());
       form.reset();
     } catch (error: any) {
       console.error('Submission error:', error);
@@ -99,7 +115,7 @@ export function Section3() {
             Step Into the Winning Zone – Connect with Lucky Exchange!
           </h2>
           <p className="text-muted-foreground">
-            We’re committed to providing you the best experience. Let’s make sports trading
+            We&apos;re committed to providing you the best experience. Let&apos;s make sports trading
             effortless and exciting!
           </p>
           <div className="space-y-4">
@@ -171,6 +187,11 @@ export function Section3() {
               {submitStatus === 'error' && (
                 <p className="text-center text-red-600 mt-2">
                   Failed to send message. Please try again.
+                </p>
+              )}
+              {submitStatus === 'cooldown' && (
+                <p className="text-center text-yellow-600 mt-2">
+                  請等待5分鐘後再次提交
                 </p>
               )}
             </form>
