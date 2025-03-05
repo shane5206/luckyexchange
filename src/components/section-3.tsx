@@ -186,7 +186,7 @@ export function Section3() {
               )}
               {submitStatus === 'cooldown' && (
                 <p className="text-center text-yellow-600 mt-2">
-                  請等待5分鐘後再次提交
+                  Please wait for 5 minutes before submitting again
                 </p>
               )}
             </form>
