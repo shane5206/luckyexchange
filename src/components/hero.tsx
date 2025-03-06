@@ -31,44 +31,50 @@ export function Hero() {
 
   return (
     <section className="flex flex-col items-center gap-4 sm:gap-6 pb-5">
-      <div className="w-full object-center justify-center container">
+      <div className="w-full object-center justify-center container mb-8 md:mb-12">
         {/* 桌面版輪播 */}
         <Carousel orientation="horizontal" className="hidden md:block" opts={{ loop: true }}>
           <CarouselContent>
             <CarouselItem>
-              <div className="relative w-full h-[300px] md:h-[450px] lg:h-[550px]">
+              <div className="relative w-full aspect-[1920/1280]">
                 <Image
                   alt="Carousel image 1"
                   src="/images/Official-Website-Banner-19201280--01.png"
                   fill
-                  className="rounded-lg"
+                  className="rounded-lg object-contain"
+                  sizes="(min-width: 1280px) 1920px, 100vw"
+                  priority
                 />
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[300px] md:h-[450px] lg:h-[550px]">
+              <div className="relative w-full aspect-[1920/1280]">
                 <Image
                   alt="Carousel image 3"
                   src="/images/Official-Website-Banner-19201280--03.png"
                   fill
-                  className="rounded-lg"
+                  className="rounded-lg object-contain"
+                  sizes="(min-width: 1280px) 1920px, 100vw"
+                  priority
                 />
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[300px] md:h-[450px] lg:h-[550px]">
+              <div className="relative w-full aspect-[1920/1280]">
                 <Image
                   alt="Carousel image 2"
                   src="/images/Official-Website-Banner-19201280--02.png"
                   fill
-                  className="rounded-lg"
+                  className="rounded-lg object-contain"
+                  sizes="(min-width: 1280px) 1920px, 100vw"
+                  priority
                 />
               </div>
             </CarouselItem>
           </CarouselContent>
-          <div className="absolute inset-x-0 flex justify-center gap-2">
-            <CarouselPrevious className="relative translate-y-0 left-0 mr-2" />
-            <CarouselNext ref={desktopNextRef} className="relative translate-y-0 right-0" />
+          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4">
+            <CarouselPrevious className="relative left-0 h-12 w-12" />
+            <CarouselNext ref={desktopNextRef} className="relative right-0 h-12 w-12" />
           </div>
         </Carousel>
 
@@ -76,45 +82,45 @@ export function Hero() {
         <Carousel orientation="horizontal" className="md:hidden container" opts={{ loop: true }}>
           <CarouselContent>
             <CarouselItem>
-              <div className="relative w-full">
+              <div className="relative w-full aspect-[1080/1620]">
                 <Image
                   alt="Carousel image 2"
                   src="/images/0103-10801620.png"
-                  fill={false}
-                  width={500}
-                  height={500}
-                  className="rounded-lg"
+                  fill
+                  className="rounded-lg object-contain"
+                  sizes="(max-width: 768px) 100vw"
+                  priority
                 />
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full">
+              <div className="relative w-full aspect-[1080/1620]">
                 <Image
                   alt="Carousel image 1"
                   src="/images/Banner-10801620-03.png"
-                  fill={false}
-                  width={500}
-                  height={500}
-                  className="rounded-lg"
+                  fill
+                  className="rounded-lg object-contain"
+                  sizes="(max-width: 768px) 100vw"
+                  priority
                 />
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
+              <div className="relative w-full aspect-[1080/1620]">
                 <Image
                   alt="Carousel image 3"
                   src="/images/Banner-10801620-02.png"
-                  fill={false}
-                  width={500}
-                  height={500}
-                  className="rounded-lg"
+                  fill
+                  className="rounded-lg object-contain"
+                  sizes="(max-width: 768px) 100vw"
+                  priority
                 />
               </div>
             </CarouselItem>
           </CarouselContent>
-          <div className="absolute inset-x-0 flex justify-center gap-2">
-            <CarouselPrevious className="relative translate-y-0 left-0 mr-2" />
-            <CarouselNext ref={mobileNextRef} className="relative translate-y-0 right-0" />
+          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4">
+            <CarouselPrevious className="relative left-0 h-12 w-12" />
+            <CarouselNext ref={mobileNextRef} className="relative right-0 h-12 w-12" />
           </div>
         </Carousel>
       </div>
