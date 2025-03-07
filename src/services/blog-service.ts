@@ -15,6 +15,100 @@ export interface BlogPost {
 
 // Example blog post database
 const blogPostsData: Record<string, BlogPost> = {
+  'lucky-exchange-b2b-sports-trading': {
+    id: 'lucky-exchange-b2b-sports-trading',
+    title: 'Lucky Exchange: The Leading B2B Sports Trading Platform',
+    excerpt: 'Lucky Exchange provides real-time odds, fast settlements, and scalable B2B solutions for bookmakers and operators. Learn how it can enhance your sports trading business.',
+    date: '2024-03-06',
+    author: 'Lucky Exchange Team',
+    authorRole: 'B2B Sports Trading Experts',
+    authorImage: '/images/blog/authors/Lucky Exchange.png',
+    category: 'Sports Trading',
+    imageUrl: '/images/blog/Designer (48).jpeg',
+    content: `
+      <div class="blog-content">
+        <section class="intro-section mb-8">
+          <p class="text-base leading-relaxed mb-6">In the fast-growing sports betting industry, having a robust and scalable B2B platform is essential. 
+          Lucky Exchange is transforming the market by offering real-time odds, automated settlements, and seamless API integration, 
+          providing a superior experience for bookmakers and operators worldwide.</p>
+        </section>
+        
+        <section class="features-section mb-8">
+          <h2 class="text-2xl font-bold mb-4">Why Choose Lucky Exchange?</h2>
+          <p class="text-base leading-relaxed mb-4">Lucky Exchange offers an all-in-one solution tailored to the needs of sports trading businesses, ensuring high liquidity, secure transactions, and unmatched market access.</p>
+          
+          <h3 class="text-xl font-semibold mb-3">Key Features</h3>
+          <p class="text-base leading-relaxed mb-3">Lucky Exchange provides a range of advanced features designed for professional operators:</p>
+          
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>
+              <strong>Real-Time Odds:</strong> Accurate pricing models for competitive betting.
+            </li>
+            <li>
+              <strong>Fast Settlements:</strong> Automated rolling settlements for uninterrupted operations.
+            </li>
+            <li>
+              <strong>Scalable B2B API:</strong> Seamless integration with existing sportsbooks.
+            </li>
+            <li>
+              <strong>99% Market Uptime:</strong> Continuous market access with minimal closures.
+            </li>
+            <li>
+              <strong>Multi-Sport Coverage:</strong> Cricket, football, basketball, tennis, and kabaddi.
+            </li>
+          </ul>
+        </section>
+        
+        <section class="api-section mb-8">
+          <h2 class="text-2xl font-bold mb-4">Seamless API Integration</h2>
+          <p class="text-base leading-relaxed mb-4">Bookmakers and operators can integrate Lucky Exchange's API to access real-time data, customized market offerings, and exposure management.</p>
+
+          <h3 class="text-xl font-semibold mb-3">API Benefits</h3>
+          <p class="text-base leading-relaxed mb-3">With Lucky Exchange's API, businesses can enjoy:</p>
+
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>
+              <strong>Real-Time Data Feeds:</strong> Stay ahead with accurate market updates.
+            </li>
+            <li>
+              <strong>Flexible Market Customization:</strong> Tailor betting options for different user preferences.
+            </li>
+            <li>
+              <strong>Secure Infrastructure:</strong> Designed to handle high transaction volumes securely.
+            </li>
+          </ul>
+        </section>
+        
+        <section class="markets-section mb-8">
+          <h2 class="text-2xl font-bold mb-4">Extensive Market Coverage</h2>
+          <p class="text-base leading-relaxed mb-4">Lucky Exchange supports a diverse range of sports and betting markets, ensuring a dynamic experience for users.</p>
+          
+          <div class="sport-coverage mb-4">
+            <h3 class="text-xl font-semibold mb-3">Cricket Betting</h3>
+            <p class="text-base leading-relaxed mb-4">Access over 3,250+ live matches yearly with 150+ betting markets, including Match Odds, Fancy Bets, and Premium Trading.</p>
+          </div>
+
+          <div class="sport-coverage mb-4">
+            <h3 class="text-xl font-semibold mb-3">Other Sports</h3>
+            <p class="text-base leading-relaxed mb-4">Comprehensive coverage of football, tennis, basketball, and kabaddi, with both pre-match and in-play markets.</p>
+          </div>
+        </section>
+        
+        <section class="conclusion-section">
+          <h2 class="text-2xl font-bold mb-4">Conclusion</h2>
+          <p class="text-base leading-relaxed mb-4">Lucky Exchange is revolutionizing B2B sports trading with real-time odds, automated settlements, and advanced API solutions. 
+          Whether you're a bookmaker or an operator, Lucky Exchange offers everything you need to enhance your sports trading business.</p>
+          
+          <div class="cta-box bg-primary/10 p-4 rounded-md text-center mt-6">
+            <p class="font-bold text-lg">Ready to elevate your sports trading business?</p>
+            <p class="text-base">Contact our team today to learn more about Lucky Exchange.</p>
+          </div>
+        </section>
+      </div>
+    `,
+    tags: ['B2B Sports Trading', 'Bookmakers', 'Sports Betting API'],
+    relatedPosts: ['lucky-exchange-b2b-platform-guide', 'ultimate-b2b-sports-trading-platform']
+  },
   'lucky-exchange-b2b-platform-guide': {
     id: 'lucky-exchange-b2b-platform-guide',
     title: 'Lucky Exchange: The Ultimate B2B Sports Trading Platform',
@@ -199,7 +293,7 @@ const blogPostsData: Record<string, BlogPost> = {
       </div>
     `,
     tags: ['B2B Sports Trading', 'Bookmakers', 'Sports Betting API', 'Real-Time Odds', 'API Integration'],
-    relatedPosts: ['ultimate-b2b-sports-trading-platform']
+    relatedPosts: ['lucky-exchange-b2b-sports-trading', 'ultimate-b2b-sports-trading-platform']
   },
   'ultimate-b2b-sports-trading-platform': {
     id: 'ultimate-b2b-sports-trading-platform',
@@ -262,7 +356,7 @@ const blogPostsData: Record<string, BlogPost> = {
       </div>
     `,
     tags: ['B2B Sports Trading', 'Bookmakers', 'Sports Betting API'],
-    relatedPosts: ['lucky-exchange-b2b-platform-guide']
+    relatedPosts: ['lucky-exchange-b2b-sports-trading', 'lucky-exchange-b2b-platform-guide']
   }
 };
 
