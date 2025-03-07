@@ -31,6 +31,7 @@ export function Header() {
       <nav className="hidden md:flex items-center justify-center gap-5">
         <NavItem2 href="/" label="Home" />
         <NavItem2 href="/product" label="Product" />
+        <NavItem2 href="/about-us" label="About Us" />
         <NavItem2 href="/blog" label="Blog" />
         <NavItem2 href="/contact-us" label="Contact Us" />
       </nav>
@@ -50,6 +51,7 @@ export function Header() {
           <nav className="flex flex-col gap-1 pt-2">
             <NavItem2 href="/" label="Home" />
             <NavItem2 href="/product" label="Product" />
+            <NavItem2 href="/about-us" label="About Us" />
             <NavItem2 href="/blog" label="Blog" />
             <NavItem2 href="/contact-us" label="Contact Us" />
             <Button size="lg" asChild variant="destructive" className="mt-2 w-full">

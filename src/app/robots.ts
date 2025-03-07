@@ -8,6 +8,12 @@ export default function robots(): MetadataRoute.Robots {
         '/',
         '/blog',
         '/blog/*',
+        '/product',
+        '/product/*',
+        '/contact-us',
+        '/about-us',
+        '/events',
+        '/events/*',
       ],
       disallow: [
         '/api/', 

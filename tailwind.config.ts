@@ -1,6 +1,22 @@
 import type { Config } from "tailwindcss";
-
 import { fontFamily } from "tailwindcss/defaultTheme";
+import colors from "tailwindcss/colors";
+
+// 导入flattenColorPalette工具
+// @ts-ignore - 忽略类型错误
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+
+// 添加颜色变量函数
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
 
 const config = {
   darkMode: ["class"],
@@ -64,6 +80,11 @@ const config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // 添加标准颜色
+        blue: colors.blue,
+        sky: colors.sky,
+        indigo: colors.indigo,
+        amber: colors.amber,
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -98,7 +119,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    addVariablesForColors, // 添加颜色变量插件
+  ],
 } satisfies Config;
 
 export default config;
