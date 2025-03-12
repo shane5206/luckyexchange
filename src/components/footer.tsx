@@ -90,7 +90,7 @@ export function Footer() {
         {/* Legal Disclaimer */}
         <div className="text-xs text-muted-foreground max-w-4xl mx-auto text-center space-y-2">
           <p>
-            Luckysports.cloud is owned and operated by Block Treasure N.V. registration number: 162195, registered address: Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curaçao. Contact us: xxx@xxx.xxx.
+            Luckysports.cloud is owned and operated by Block Treasure N.V. registration number: 162195, registered address: Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curaçao. Contact us: business@luckysports.cloud.
           </p>
           <p>
             Luckysports.cloud is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros and operates under License No. ALSI-202502017-FI1. Luckysports.cloud has passed all regulatory compliance and is legally authorized to conduct gaming operations for any and all games of chance and wagering.
