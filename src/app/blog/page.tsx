@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
 import { BlogCard } from '@/components/blog/blog-card';
 import { BlogService } from '@/services/blog-service';
@@ -33,7 +31,6 @@ export default function BlogPage() {
   
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col">
         {/* Blog page header */}
         <section className="bg-background py-16 md:py-24">
@@ -81,7 +78,6 @@ export default function BlogPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 } 

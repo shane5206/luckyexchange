@@ -58,7 +58,6 @@ export default function AuthorPage({ params }: { params: { author: string } }) {
   
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col">
         {/* Author page header */}
         <section className="bg-background py-16 md:py-24">
@@ -115,7 +114,6 @@ export default function AuthorPage({ params }: { params: { author: string } }) {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 } 

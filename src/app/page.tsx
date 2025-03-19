@@ -16,7 +16,7 @@ import { Footer } from "@/components/footer";
 export default function HomePage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero1 
         title="Lucky Exchange-The Ultimate B2B Sports Trading solution"
         subtitle="Real-Time Odds, Fast Settlements & Scalable B2B Solutions for Bookmakers and Operators"
@@ -32,7 +32,7 @@ export default function HomePage() {
       <SocialProof />
       <Section3 />
       <Faq />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

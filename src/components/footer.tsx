@@ -70,19 +70,19 @@ export function Footer() {
 
         {/* Legal Links */}
         <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-          <a href="https://jdbaplus.com/kyc-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+          <a href="/kyc-policy" className="hover:text-foreground">
             KYC Policy
           </a>
-          <a href="https://jdbaplus.com/responsible-gambling/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+          <a href="/responsible-gambling" className="hover:text-foreground">
             Responsible Gambling
           </a>
-          <a href="https://jdbaplus.com/self-exclusion-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+          <a href="/self-exclusion-policy" className="hover:text-foreground">
             Self Exclusion Policy
           </a>
-          <a href="https://jdbaplus.com/terms-and-conditions/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+          <a href="/terms-and-conditions" className="hover:text-foreground">
             Terms and Conditions
           </a>
-          <a href="https://jdbaplus.com/underage-gaming-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+          <a href="/underage-gaming-policy" className="hover:text-foreground">
             Underage Gaming Policy
           </a>
         </div>

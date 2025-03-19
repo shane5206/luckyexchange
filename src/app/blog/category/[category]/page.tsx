@@ -51,7 +51,6 @@ export default function CategoryPage({ params }: { params: { category: string } 
   
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col">
         {/* Category page header */}
         <section className="bg-background py-16 md:py-24">
@@ -111,7 +110,6 @@ export default function CategoryPage({ params }: { params: { category: string } 
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 } 

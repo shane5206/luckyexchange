@@ -66,7 +66,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col">
         {/* Blog post header */}
         <section className="relative h-80 md:h-96 lg:h-[500px] w-full overflow-hidden">
@@ -238,7 +237,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 } 

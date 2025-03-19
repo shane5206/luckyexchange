@@ -51,7 +51,6 @@ export default function TagPage({ params }: { params: { tag: string } }) {
   
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col">
         {/* Tag page header */}
         <section className="bg-background py-16 md:py-24">
@@ -109,7 +108,6 @@ export default function TagPage({ params }: { params: { tag: string } }) {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 } 

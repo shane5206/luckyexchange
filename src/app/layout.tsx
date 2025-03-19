@@ -5,6 +5,8 @@ import { Inter, Instrument_Sans } from "next/font/google";
 import Script from "next/script";
 
 import { cn } from "@/lib/utils";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const fontSans = Inter({
   variable: "--font-sans",
@@ -88,7 +90,13 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        {children}
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,12 +1,9 @@
-import { Header } from "@/components/header";
 import { Hero1 } from "@/components/hero1";
 import { Section3 } from "@/components/section-3";
-import { Footer } from "@/components/footer";
 
 export default function ContactPage() {
   return (
     <>
-      <Header />
       <Hero1 
         title="Contact Us"
         subtitle="Get in touch with our team for any inquiries about our sports trading solutions"
@@ -22,7 +19,6 @@ export default function ContactPage() {
         </div>
       </div>
       <Section3 />
-      <Footer />
     </>
   );
 } 

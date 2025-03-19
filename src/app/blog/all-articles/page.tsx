@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { BlogCard } from "@/components/blog/blog-card";
 import { BlogService } from "@/services/blog-service";
@@ -33,7 +31,6 @@ export default function AllArticlesPage() {
 
   return (
     <>
-      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -73,7 +70,6 @@ export default function AllArticlesPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 } 
