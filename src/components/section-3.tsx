@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: <Mail className="size-5 text-primary" />,
     title: "Email",
-    description: "support-general@merchant.uni247.xyz",
+    description: "business@luckysports.cloud",
   },
 ];
 
