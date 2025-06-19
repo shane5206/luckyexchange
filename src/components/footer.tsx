@@ -1,4 +1,17 @@
+"use client";
+import { useEffect } from "react";
+
 export function Footer() {
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      (window as any).anj_8ca673f8_8243_4500_879f_4aee4d27dc54 &&
+      typeof (window as any).anj_8ca673f8_8243_4500_879f_4aee4d27dc54.init === "function"
+    ) {
+      (window as any).anj_8ca673f8_8243_4500_879f_4aee4d27dc54.init();
+    }
+  }, []);
+
   return (
     <footer className="bg-black/5 mt-10 py-10">
       <div className="container flex flex-col gap-8">
@@ -95,6 +108,11 @@ export function Footer() {
           <p>
             Luckysports.cloud is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros and operates under License No. ALSI-202502017-FI1. Luckysports.cloud has passed all regulatory compliance and is legally authorized to conduct gaming operations for any and all games of chance and wagering.
           </p>
+        </div>
+        {/* Anjouan 授權標章 */}
+        <div className="flex flex-col items-center justify-center mt-8 gap-2">
+          <span className="text-xs text-muted-foreground">Licensed by Anjouan</span>
+          <div id="anj-8ca673f8-8243-4500-879f-4aee4d27dc54" data-anj-seal-id="8ca673f8-8243-4500-879f-4aee4d27dc54" data-anj-image-size="128" data-anj-image-type="basic-small"></div>
         </div>
       </div>
     </footer>

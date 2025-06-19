@@ -74,6 +74,7 @@ export default function RootLayout({
             gtag('config', 'G-RT0ZMKQ4EK');
           `}
         </Script>
+        <Script src="https://8ca673f8-8243-4500-879f-4aee4d27dc54.snippet.anjouangaming.org/anj-seal.js" strategy="afterInteractive" />
       </head>
       <body
         className={cn(
