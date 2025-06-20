@@ -5,10 +5,10 @@ export function Footer() {
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
-      (window as any).anj_8ca673f8_8243_4500_879f_4aee4d27dc54 &&
-      typeof (window as any).anj_8ca673f8_8243_4500_879f_4aee4d27dc54.init === "function"
+      (window as any).anj_78993310_6366_43ca_a90e_97c5ec776854 &&
+      typeof (window as any).anj_78993310_6366_43ca_a90e_97c5ec776854.init === "function"
     ) {
-      (window as any).anj_8ca673f8_8243_4500_879f_4aee4d27dc54.init();
+      (window as any).anj_78993310_6366_43ca_a90e_97c5ec776854.init();
     }
   }, []);
 
@@ -112,7 +112,7 @@ export function Footer() {
         {/* Anjouan 授權標章 */}
         <div className="flex flex-col items-center justify-center mt-8 gap-2">
           <span className="text-xs text-muted-foreground">Licensed by Anjouan</span>
-          <div id="anj-8ca673f8-8243-4500-879f-4aee4d27dc54" data-anj-seal-id="8ca673f8-8243-4500-879f-4aee4d27dc54" data-anj-image-size="128" data-anj-image-type="basic-small"></div>
+          <div id="anj-78993310-6366-43ca-a90e-97c5ec776854" data-anj-seal-id="78993310-6366-43ca-a90e-97c5ec776854" data-anj-image-size="128" data-anj-image-type="basic-small"></div>
         </div>
       </div>
     </footer>
